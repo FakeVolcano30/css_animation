@@ -57,7 +57,6 @@ ul li a {
 }
 
 .product-card, #gato-raro {
-  animation: girar 5s linear infinite;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 8px;
