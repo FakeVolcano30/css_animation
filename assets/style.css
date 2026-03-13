@@ -74,9 +74,7 @@ ul li a {
   height: auto;
   margin-bottom: 10px;
 }
-h2 {
-  display: flex;
-}
+
 button {
   background-color: #144272;
   color: white;
