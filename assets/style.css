@@ -103,3 +103,9 @@ footer {
     height: 100vh;
   }
 }
+@keyframes giroInfinito {
+100% {transform:rotate(360deg);}
+  }
+.product-card img:hover, #gato-raro img:hover{
+  animation: giroInfinito 2s linear infinite;}
+}
