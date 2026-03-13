@@ -52,7 +52,7 @@ ul li a {
 
 .cards-desktop {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns:1fr;
   gap: 15px;
 }
 
@@ -91,7 +91,7 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   body {
     grid-template-columns: 250px 1fr;
     grid-template-areas: 
