@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+    "aside"
+    "section"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #d1d1d1;
+}
+
+.logo {
+  background-color: #221ed8cc;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #f1f1f1;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #144272;
+  font-weight: bold;
+}
+
+.content {
+  grid-area: section;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.cards-desktop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-card, #gato-raro {
+  animation: girar 5s linear infinite;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card img, #gato-raro img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #144272;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #144272;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+      "aside section"
+      "footer footer"; 
+  }
+
+  aside {
+    height: 100vh;
+  }
+}
